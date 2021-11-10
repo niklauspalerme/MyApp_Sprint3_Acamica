@@ -8,15 +8,15 @@ module.exports = {
     env_local: {
       "NODE_ENV": "local",
       "API_DESCRIPTION": "Estás ejecutando tu API en modo desarrollador.",
-      "PORT"=3000,
-      "DB_HOST"="sprint3.cxbgbiilntg1.sa-east-1.rds.amazonaws.com",
-      "DB_USERNAME"="rootnico",
-      "DB_PASSWORD"=12345678,
-      "DB_NAME"="sprint3",
-      "DB_PORT"=3306,
-      "REDIS_HOST"="redis-sprint3.cwkyre.0001.sae1.cache.amazonaws.com",
-      "REDIS_PORT"=6379,
-      "JWT_PASS"=1234567890
+      "PORT":3000,
+      "DB_HOST":"sprint3.cxbgbiilntg1.sa-east-1.rds.amazonaws.com",
+      "DB_USERNAME":"rootnico",
+      "DB_PASSWORD":12345678,
+      "DB_NAME":"sprint3",
+      "DB_PORT":3306,
+      "REDIS_HOST":"redis-sprint3.cwkyre.0001.sae1.cache.amazonaws.com",
+      "REDIS_PORT":6379,
+      "JWT_PASS":1234567890
     },
     env_production: {
       "NODE_ENV": "production",
