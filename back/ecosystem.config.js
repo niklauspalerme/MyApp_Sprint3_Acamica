@@ -8,7 +8,7 @@ module.exports = {
     env_local: {
       "NODE_ENV": "local",
       "API_DESCRIPTION": "Estás ejecutando tu API en modo desarrollador.",
-      "PORT": process.env.PORT,
+      "PORT": 3000,
       "DB_HOST": process.env.DB_HOST,
       "DB_USERNAME": process.env.DB_USERNAME,
       "DB_PASSWORD": process.env.DB_PASSWORD,
