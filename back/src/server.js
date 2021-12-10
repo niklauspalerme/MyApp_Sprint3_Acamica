@@ -16,7 +16,7 @@ const { userRouter } = require('./routers/user');
 // Función Principal
 
 
-const ServerUp = (port = 8090, message= 'The server is ready') =>{
+const ServerUp = (port,message= 'The server is ready') =>{
 
     /////////////////////////////////////////////////////////////
     // Variables 
@@ -47,6 +47,8 @@ const ServerUp = (port = 8090, message= 'The server is ready') =>{
 
     /////////////////////////////////////////////////////////////
     //Puerto
+
+    console.log(port);
 
     server.listen( port , ()=>{
         console.log(`${message} in port ${port}`)
