@@ -48,8 +48,6 @@ const ServerUp = (port,message= 'The server is ready') =>{
     /////////////////////////////////////////////////////////////
     //Puerto
 
-    console.log(port);
-
     server.listen( port , ()=>{
         console.log(`${message} in port ${port}`)
     })
