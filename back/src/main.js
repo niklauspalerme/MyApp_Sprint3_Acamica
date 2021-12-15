@@ -33,7 +33,7 @@ async function main() {
         await connect(DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_NAME);
         
         //Inserto algunos records
-        await initialize()
+        await initialize();
 
         /////////////////////////////////////////////////////////
         //Server

@@ -10,6 +10,7 @@ const { orderRouter } = require('./routers/order');
 const { paymentMethodRouter } = require('./routers/paymentMethod');
 const { productRouter } = require('./routers/product');
 const { userRouter } = require('./routers/user');
+const cors = require('cors');
 
 
 /////////////////////////////////////////////////////////////
@@ -35,6 +36,7 @@ const ServerUp = (port,message= 'The server is ready') =>{
     server.use(express.urlencoded({extended: false}));
     server.use('/documentation', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
     server.use(helmet());
+    server.use(cors());
 
     /////////////////////////////////////////////////////////////
     // Routers
