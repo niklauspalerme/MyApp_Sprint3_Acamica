@@ -3,7 +3,7 @@
   "info": {
     "description": "Una API para gestionar los usuarios, pedidos y productos de Delilah Restó",
     "version": "2.0.0",
-    "title": "Delilah Restó - Sprint #2",
+    "title": "Delilah Restó - Sprint #3",
     "termsOfService": "http://swagger.io/terms/",
     "contact": {
       "email": "nicolax0416@gmail.com"
@@ -34,7 +34,7 @@
     }
     
   ],
-  "schemes": ["http"],
+  "schemes": ["http","https"],
   "paths": {
     "/api/v1/usuarios/admins": {
       "get": {
