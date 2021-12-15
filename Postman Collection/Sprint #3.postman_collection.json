@@ -1,0 +1,1022 @@
+{
+	"info": {
+		"_postman_id": "7a82057d-380d-42c6-9b2c-a84db3e43fcb",
+		"name": "Sprint #3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Medios de Pago",
+			"item": [
+				{
+					"name": "/mediosDePago",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"description": "Todos pueden acceder",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/mediosDePago",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mediosDePago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/mediosDePago",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Fiado\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/mediosDePago",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mediosDePago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/mediosDePago/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Credito banesco\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/mediosDePago/4",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mediosDePago",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/mediosDePago/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/mediosDePago/4",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mediosDePago",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agenda",
+			"item": [
+				{
+					"name": "/agenda/admins",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/agendas/admins",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"agendas",
+								"admins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agenda",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/agendas",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"agendas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agenda",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"description": "Todos pueden acceder",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"address\": \"Argentina, CABA, Flores, Bolivia 567, 1A\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/agendas",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"agendas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agenda/:addressId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"address\": \"Argentina, CABA, Flores, Rivadavia 245, 2A\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/agendas/4",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"agendas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agenda/:addressId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/agendas/1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"agendas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "/productos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"description": "Todos pueden acceder",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/productos",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/productos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"name\": \"Hambuguesa Funsión Japo-Mex 5\",\r\n    \"description\": \" Hamburguesa de 150gr de carne, guacamole, cilandro, tomate, wasabi, lechuga romana\",\r\n    \"picture\": \"https://live.staticflickr.com/3406/3410455398_6a8829d9fc_b.jpg\",\r\n    \"price\": 750\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/productos",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/productos/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"description": "Solo el Admins",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"name\": \"Hambuguesa Funsión Japo-Mex 10\",\r\n    \"description\": \" Hamburguesa de 150gr de carne, guacamole, cilandro, tomate, wasabi, lechuga romana\",\r\n    \"picture\": \"https://live.staticflickr.com/3406/3410455398_6a8829d9fc_b.jpg\",\r\n    \"price\": 750\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/productos/5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"productos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "productos/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"description": "Solo el Admins",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/productos/5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"productos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "/usuarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/usuarios",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Nicole Palermo\",\r\n  \"mobile\": \"113344553333\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/usuarios",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"nikyuyo\",\r\n    \"name\": \"Nicolas Palermo\",\r\n    \"email\": \"nikyuyo3@gmail.com\",\r\n    \"mobile\": \"11-22544572\",\r\n    \"address\": \"CABA, Flores, Bolivia 470, 28\",\r\n    \"password\": \"nikyuyo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/usuarios/signin",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"nikyuyo\",\r\n    \"password\": \"nikyuyo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/usuarios/login",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/login (Admis)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admins\",\r\n    \"password\": \"admins\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/usuarios/login",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/admins",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/usuarios/admins",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"admins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/:userId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/usuarios/4",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/admins/disabled/:userId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"disabled\": true }\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/usuarios/admins/disabled/3",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"admins",
+								"disabled",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "/pedidos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text",
+								"description": "Todos pueden Acceder"
+							}
+						],
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/pedidos",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"addressId\": 6,\r\n    \"paymentMethodId\": 2,\r\n    \"products\":[{\r\n        \"productId\": 2,\r\n        \"quantity\": 2\r\n    },{\r\n        \"productId\": 1,\r\n        \"quantity\": 2\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/pedidos",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/admins",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"description": "Solo el Admins",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/pedidos/admins",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pedidos",
+								"admins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/:orderId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text",
+								"description": "Todos pueden acceder"
+							}
+						],
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/pedidos/1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pedidos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/:orderId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"addressId\": 6,\r\n    \"paymentMethodId\": 1,\r\n    \"products\":[{\r\n        \"productId\": 1,\r\n        \"quantity\": 1\r\n    },{\r\n        \"productId\": 2,\r\n        \"quantity\": 2\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/pedidos/1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pedidos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/:orderId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/pedidos/1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pedidos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pedidos/state/:orderId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authentication",
+								"value": "",
+								"type": "text",
+								"description": "Solo el Admins"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state\": \"Processing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.delilahrestonico.tk/api/v1/pedidos/state/1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"delilahrestonico",
+								"tk"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pedidos",
+								"state",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
