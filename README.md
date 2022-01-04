@@ -1,97 +1,66 @@
-## Sprint Proyect #2 - My APP Persistente
+# Sprint Proyect #3 -My APP Live
 
-Entrega del proyecto del Sprint #2 sobre **My APP Persistente**. Donde consiste en presentar una api que permite gestionar ordenes de los usuarios del restaurante Delilah Restó. Además se contara con un usuarip Administrador que pueda supervisar toda la aplicación 
-
-
-## Requerimientos para usar la APP de manera local
-
-- Servidor MySQL
-- Servidor Redis
-- Node JS
+Entrega del proyecto del Sprint #3 sobre **My APP Live**. Consiste en entregar una aplicación que se encuentre online en el internet para poder gestionar ordenes de los usuarios del restuarante Delilah Restó. Además la aplicación contará con un usuario admins que pueda realizar todas las operaciones CRUD de la misma
 
 
-## Pasos para usar la APP de manera local
+## Conectarse al Sevidor de AWS
+* Ingresar a la url https://aws.amazon.com/ y presionar Sign IN
+* Seleccionar IAM User
+* Ingresar Account Id: `archivo_account_id`
+* Ingresar usuario: `archivo_user`
+* Ingresar password: `archivo_password`
 
-- Descargar el archivo zip y descomprimir el archivo
-- Ejecutar el script ubicado en la carpeta others **create_databse.sql**  en el servidor MySQL
-- Instalar paquetes en Node (Ver sección **Instalación de paquetes de Node**)
-- Generar variables de entorno (Ver sección **Variables de entorno**)
-- Iniciar la api (Ver sección **Ejecución de la APP**)
-- Iniciar el test (Ver sección **Ejecucíón del Test**)
-- Ver documentación de los endpoints de la APP (Ver sección **Documentación Endpoints (Swagger**)
+## Iniciar sas Instancias
+* En el buscador de la barra superior ingresar EC2, seleccionarlo
+* Acceder al menú *Auto Scaling Groups* en la sección de la izquierda
+* Hacer click sobre el grupo creado con nombre `ASG-Sprint3`
+* Presionar el botón edit en el primer cuadro (Detalles del grupo)
+* Ingresar los siguientes valores:
+	* Desired capacity: 2
+	* Minimum capacity: 1
+	* Maximum capacity: 3
+* Presionar botón Update/Actualizar
 
+## Chequeo de que las Instancian esten funcionando
+* En el buscador de la barra superior ingresar EC2, seleccionarlo
+* Acceder al menú Instances
+* Verificar que al menos una instancian pase a estado Running/Corriendo
 
-## Instalación de paquetes de Node
+## Ingresar sitios del Proyecto
+* Url dominio propio del frontend: https://www.delilahrestonico.tk/
+* Url dominio de la api: https://api.delilahrestonico.tk/
+* Url de la documentación de la api:  https://api.delilahrestonico.tk/api/v1/documentation/
+* Repositorio Git del proyecto actualizado: https://github.com/niklauspalerme/MyApp_Sprint3_Acamica
 
-Ejecuete el siguiente comando para iniciar la instalación de los paquetes node del proyecto
+## Probar API del Sprint #3 
+* Ingresando a postman o similar
+* Acceder a cada punto según documentación en https://api.delilahrestonico.tk/api/v1/documentation/
 
- ```bash
-  npm install
-```
+## Agregar rule para Acceder por SSH desde Mi PC
+* En el buscador de la barra superior ingresar EC2, seleccionarlo
+* Acceder al menú Security Groups
+* Buscar en la lista y hacer click sobre *sprint3* (Nombre del grupo de seguridad)
+* Presionar botón Edit inbound rules
+* Presionar botón Add rule
+* Seleccionar Type SSH
+* Seleccionar Source My IP y luego presionar Save Rules
 
-## Variables de entorno
+## Acceder por SSH a Instancias
+* En el buscador de la barra superior ingresar EC2, seleccionarlo
+* Acceder al menú Instances
+* Hacer click en una instancia con estado Running
+* Presionar el botón Connect, en la solapa SSH muestra el instructivo para continuar
+* El archivo PEM va adjunto con la entrega
 
-Para ejecutar el proyecto hay que crear las variables en el archivo llamado `.env`. Puede utilizar también el archivo `sample.env` como referencia para su creación
+## CICD
+* Acceder a proyecto en https://gitlab.com/nicolax0416/sprint-3/-/pipelines
+* Se actualiza repositorio en S3 
 
-- `PORT` puerto del servidor express (por defecto se sugiere usar 8080)
-- `DB_USERNAME` usuario que conecta con permisos de insert/update/delete a la base de MySql
-- `DB_PASSWORD` contraseña del usuario
-- `DB_NAME` nombre de la base en MySQL
-- `DB_PORT` puerto del servidor MySQL
-- `DB_HOST` servidor del MySQL
-- `REDIS_HOST` servidor del Redis
-- `REDIS_PORT` puerto del servidor del redis
-- `JWT_PASS` key para armar la valicación por JWT (puede utilizar cualquier valor)
-
-## Ejecución de la APP
-
-Ejecute el siguiente comando:
-
- ```bash
-  npm run dev 
-```
-
-## Ejecución del test
-
-Ejecute el siguiente comando:
-
-
-```bash
-  npm run test
-```
-
-## Documentación Endpoints (Swagger)
-
-Para poder acceder a la documentación Swagger de la api, por favor acceda al siguiente endpoint como referencia:
-
-```bash
-  http://localhost:8080/api-docs/
-```
-
-## Postman Collection
-
-Puede encontrar la colección del Postman en la carpeta con el mismo nombre. Acontinuación se da mas detalle acerca de la colección Postman para una mayor comidad y entendimiendo del usuario:
+## Acceder a S3
+* En el buscador de la barra superior ingresar EC2, seleccionarlo
+* Acceder al menú S3
+* Click en el bucket `sprint3-nicolaspalermo`
+* Se verá el archivo que sirve de index para el sitio https://www.delilahrestonico.tk/
 
 
-- La colección de Postman va estar dividido por los diferentes endpoints
 
-![postman division](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%202.JPG)
-
-- La gran mayoria de los endpoints van a necesitar un token de **autenticación** en los headers para su uso:
-
-![postman division](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%203.JPG)
-
-- Se sugiere leer la sección **Documentación Endpoints (Swagger)** para poder tener una idea de como usar cada unos de los endpoints
-
-
-![documentación swagger](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/inmagen%204.JPG)
-
-- En postman en la carpeta **User** va ver 2 pestañas para login. Una que va tener las credenciales del usuario admins, que les va servir para poder acceder a ciertos endpoints que estan restringidos
-
-![login admins](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%205.JPG)
-
-- Y la otra pestaña donde despues de haber creado respectivamente su usuario podrá colocar aqui los datos de y asi poder obtener su token de autenticación
-
-![login usuario normal](https://github.com/niklauspalerme/imagenes/blob/main/MyApp_Sprint2_Acamica/imagen%206.JPG)
-
-- Importante a tener en cuenta los token de autenticación van a tener un **Time Out** de 1 hr
