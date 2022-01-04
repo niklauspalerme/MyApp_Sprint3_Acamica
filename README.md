@@ -1,4 +1,4 @@
-# Sprint Proyect #3 -My APP Live
+# Sprint Proyect #3 - My APP Live
 
 Entrega del proyecto del Sprint #3 sobre **My APP Live**. Consiste en entregar una aplicación que se encuentre online en el internet para poder gestionar ordenes de los usuarios del restuarante Delilah Restó. Además la aplicación contará con un usuario admins que pueda realizar todas las operaciones CRUD de la misma
 
