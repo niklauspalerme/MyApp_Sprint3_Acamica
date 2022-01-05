@@ -10,7 +10,7 @@ Entrega del proyecto del Sprint #3 sobre **My APP Live**. Consiste en entregar u
 * Ingresar usuario: `archivo_user`
 * Ingresar password: `archivo_password`
 
-## Iniciar sas Instancias
+## Iniciar las Instancias
 * En el buscador de la barra superior ingresar EC2, seleccionarlo
 * Acceder al menú *Auto Scaling Groups* en la sección de la izquierda
 * Hacer click sobre el grupo creado con nombre `ASG-Sprint3`
@@ -21,7 +21,7 @@ Entrega del proyecto del Sprint #3 sobre **My APP Live**. Consiste en entregar u
 	* Maximum capacity: 3
 * Presionar botón Update/Actualizar
 
-## Chequeo de que las Instancian esten funcionando
+## Chequeo de que las Instancias esten funcionando
 * En el buscador de la barra superior ingresar EC2, seleccionarlo
 * Acceder al menú Instances
 * Verificar que al menos una instancian pase a estado Running/Corriendo
