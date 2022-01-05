@@ -23,8 +23,8 @@ Entrega del proyecto del Sprint #3 sobre **My APP Live**. Consiste en entregar u
 
 ## Chequeo de que las Instancias esten funcionando
 * En el buscador de la barra superior ingresar EC2, seleccionarlo
-* Acceder al menú Instances
-* Verificar que al menos una instancian pase a estado Running/Corriendo
+* Acceder al menú Instances/Instancias
+* Verificar que las instancias pasen a estado `Running/Corriendo`
 
 ## Ingresar sitios del Proyecto
 * Url dominio propio del frontend: https://www.delilahrestonico.tk/
